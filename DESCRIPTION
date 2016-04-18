@@ -1,0 +1,14 @@
+Package: wNetwork
+Title: Calculate topological characteristics of weighted networks
+Version: 1.0
+Repository: CRAN
+Date: 2015-11-11
+Author: Hang Xiong
+Maintainer: Hang Xiong <hang.xiong@outlook.com>
+Description: This package provides functions that calculate the topological
+    characteristics (centralization, small-worldness, scale-freeness, etc.) of
+    weighted networks.
+License: GPL-3
+Depends: tnet, stats4
+LazyData: TRUE
+RoxygenNote: 5.0.1

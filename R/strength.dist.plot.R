@@ -9,15 +9,23 @@
 #' @return Plot of strength distribution of the specified network.
 #' @export
 #' @examples
-#' strength.dist.plot()
+#' g <- barabasi.game(1000, directed = FALSE)
+#' edg <- get.edgelist(g)
+#' edg = cbind(edg, runif(nrow(edg), 0, 1))
+#' strength.dist(edg)
+#' strength.dist.plot(edg)
 
-strength.dist_plot <- function(edgelist, type = "out", by = 1, alpha = 0.5, fit.line = TRUE)
+strength.dist.plot <- function(edgelist, type = "out", by = 1, alpha = 0.5, fit.line = TRUE)
 {
   dist = strength.dist(edgelist, type=type)
   if(dist[1,1] == 0)
   {
     degr = dist[,1][-1]
     prob = dist[,2][-1]
+  } else
+  {
+    degr = dist[,1]
+    prob = dist[,2]
   }
   plot(prob ~ degr, log = "xy", xlab = "Strength (log)", ylab = "Probability (log)", 
        col = 1, main = "Strength Distribution")
@@ -29,7 +37,7 @@ strength.dist_plot <- function(edgelist, type = "out", by = 1, alpha = 0.5, fit.
     {
       exp(cof[[1]] + cof[[2]] * log(x))
     }
-    curve(power.law, col = "red", add = TRUE, n = length(dg))
+    curve(power.law, col = "red", add = TRUE)
     print(cof)
   }
 }

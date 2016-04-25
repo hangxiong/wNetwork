@@ -20,6 +20,9 @@ Plot of degree distribution of the specified network.
 This function plots the degree distribution of a network in the form of edge list.
 }
 \examples{
-degree.dist.plot()
+g <- barabasi.game(1000, directed = FALSE)
+edg <- get.edgelist(g)
+degree.dist(edg)
+degree.dist.plot(edg)
 }
 

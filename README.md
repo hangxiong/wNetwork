@@ -83,4 +83,5 @@ strength.dist(edg)
 strength.dist.plot(edg)
   (Intercept) log(strength) 
   -1.603872     -2.170544 
+  ![alt text](https://github.com/hangxiong/wNetwork/blob/master/Degree_Distribution.png "Strength Distribution")
 ```

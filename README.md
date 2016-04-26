@@ -63,6 +63,7 @@ degree.dist(edg)
 degree.dist.plot(edg)
 (Intercept)   log(degree) 
   -1.592286   -1.840652 
+![alt text](https://github.com/hangxiong/wNetwork/blob/master/Degree_Distribution.png "Degree Distribution")
   
 g <- barabasi.game(1000, directed = FALSE)
 edg <- get.edgelist(g)
@@ -83,5 +84,5 @@ strength.dist(edg)
 strength.dist.plot(edg)
   (Intercept) log(strength) 
   -1.603872     -2.170544 
-  ![alt text](https://github.com/hangxiong/wNetwork/blob/master/Degree_Distribution.png "Strength Distribution")
+  ![alt text](https://github.com/hangxiong/wNetwork/blob/master/Strength_Distribution.png "Strength Distribution")
 ```

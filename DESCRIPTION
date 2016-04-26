@@ -6,7 +6,7 @@ Date: 2015-11-11
 Author: Hang Xiong
 Maintainer: Hang Xiong <hang.xiong@outlook.com>
 Description: This package provides functions that calculate the topological
-    characteristics (centralization, small-worldness, scale-freeness, etc.) of
+    characteristics (centralization, small-worldness, degree/strenght distribution) of
     weighted networks.
 License: GPL-3
 Depends: tnet, stats4
